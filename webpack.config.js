@@ -8,14 +8,14 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.js?$/,
                 loader: 'babel-loader'
             }
         ]
     },
     plugins:[
         new HtmlWebpackPlugin({
-            template:'./public/index.html'
+            template:'../public/index.html'
         })
     ],
     devServer: {
